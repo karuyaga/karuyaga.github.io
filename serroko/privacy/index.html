@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serroko — Privacy</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #6e6e73; --line: #e5e5ea; --accent: #6b2d7b; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111113; --fg: #f2f2f7; --muted: #a1a1a6; --line: #2c2c2e; --accent: #c48ad6; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; margin: 0 0 4px; }
+  h2 { font-size: 21px; margin: 32px 0 8px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; }
+  .muted { color: var(--muted); font-size: 15px; }
+  a { color: var(--accent); }
+  nav { margin: 12px 0 0; font-size: 15px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+</style>
+</head>
+<body>
+<main>
+
+<section id="it" lang="it">
+  <h1>Informativa sulla privacy di Serroko</h1>
+  <p class="muted">Ultimo aggiornamento: 16 novembre 2026</p>
+  <nav><a href="#en">English version below</a></nav>
+
+  <h2>In breve</h2>
+  <p>Serroko non raccoglie dati personali. Non ci sono account, server, pubblicità, statistiche d'uso
+  né servizi di terze parti. Foto, video e documenti che salvi in Serroko sono cifrati sul tuo dispositivo
+  e non vengono mai inviati a noi né ad altri.</p>
+
+  <h2>Cosa resta sul tuo dispositivo</h2>
+  <ul>
+    <li><strong>I tuoi contenuti</strong> (foto, video, documenti, nomi delle cartelle, etichette, luoghi e
+    dati EXIF) sono cifrati con AES-256 e si aprono solo con il tuo PIN. Noi non possiamo leggerli e non
+    possiamo recuperarli.</li>
+    <li><strong>PIN, chiave di recupero e Face ID / Touch ID</strong> sono gestiti dal portachiavi e dal
+    Secure Enclave del dispositivo. Il Face ID è facoltativo e Serroko non riceve mai i tuoi dati biometrici:
+    riceve solo l'esito della verifica da iOS.</li>
+    <li><strong>Foto «Tentativi di accesso»</strong> (facoltative, spente di default): se le attivi, dopo un
+    PIN sbagliato la fotocamera frontale scatta una foto che resta cifrata solo sul dispositivo.</li>
+  </ul>
+
+  <h2>Permessi richiesti</h2>
+  <ul>
+    <li><strong>Foto:</strong> per importare le foto che scegli, rimuovere gli originali se lo chiedi e
+    riportarle nel rullino quando le esporti.</li>
+    <li><strong>Fotocamera e microfono:</strong> per scattare foto e video direttamente in Serroko e, se
+    attivi l'opzione, per le foto «Tentativi di accesso».</li>
+    <li><strong>Rete locale:</strong> solo per la sincronizzazione facoltativa tra i tuoi dispositivi.</li>
+    <li><strong>Face ID:</strong> solo se attivi lo sblocco biometrico.</li>
+  </ul>
+  <p>Puoi negare o revocare ogni permesso dalle Impostazioni di iOS; le funzioni che non lo richiedono
+  continuano a funzionare.</p>
+
+  <h2>Sincronizzazione tra i tuoi dispositivi</h2>
+  <p>Se colleghi più dispositivi, Serroko li sincronizza solo sulla rete Wi-Fi locale, direttamente da un
+  dispositivo all'altro, con una connessione cifrata e autenticata. Nessun dato passa da server nostri o
+  di terzi. Il collegamento si può annullare in qualsiasi momento dalle Impostazioni.</p>
+
+  <h2>Backup ed esportazioni</h2>
+  <p>I backup (file <code>.serroko</code>) sono cifrati con una password scelta da te e vengono salvati
+  dove decidi tu (per esempio in File o su iCloud Drive). Le foto e i file che esporti o condividi escono
+  da Serroko in chiaro, verso la destinazione che scegli: da quel momento valgono le regole di quel
+  servizio.</p>
+
+  <h2>Acquisti</h2>
+  <p>La prova gratuita e lo sblocco sono acquisti in-app gestiti da Apple. Serroko riceve da Apple solo
+  la conferma dell'acquisto per attivare le funzioni; non riceve il tuo nome, la tua email né i dati di
+  pagamento. Vale l'<a href="https://www.apple.com/legal/privacy/">informativa privacy di Apple</a>.</p>
+
+  <h2>Rapporti sugli arresti anomali</h2>
+  <p>Se nelle impostazioni di iOS hai scelto di condividere i dati di analisi con gli sviluppatori, Apple
+  può inviarci rapporti anonimi sugli arresti anomali dell'app. Non contengono i tuoi contenuti e
+  puoi disattivarli in Impostazioni → Privacy e sicurezza → Analisi e miglioramenti.</p>
+
+  <h2>Bambini</h2>
+  <p>Serroko non raccoglie dati di nessuno, quindi neanche di minori.</p>
+
+  <h2>I tuoi diritti</h2>
+  <p>Poiché non conserviamo dati personali su di te, non abbiamo nulla da consultare, correggere o
+  cancellare. Per eliminare tutto ciò che Serroko ha salvato, elimina l'app dal dispositivo (e gli
+  eventuali backup che hai salvato altrove).</p>
+
+  <h2>Modifiche</h2>
+  <p>Se questa informativa cambia, la versione aggiornata sarà pubblicata su questa pagina con la nuova
+  data.</p>
+
+  <h2>Contatti</h2>
+  <p>Per domande sulla privacy: <a href="mailto:lab.dev.support@gmail.com">lab.dev.support@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+  <h1>Serroko Privacy Policy</h1>
+  <p class="muted">Last updated: November 16, 2026</p>
+
+  <h2>In short</h2>
+  <p>Serroko does not collect personal data. There are no accounts, servers, ads, usage analytics or
+  third-party services. The photos, videos and documents you keep in Serroko are encrypted on your
+  device and are never sent to us or anyone else.</p>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li><strong>Your content</strong> (photos, videos, documents, folder names, tags, places and EXIF data)
+    is encrypted with AES-256 and opens only with your PIN. We cannot read it and cannot recover it.</li>
+    <li><strong>PIN, recovery key and Face ID / Touch ID</strong> are handled by the device keychain and
+    Secure Enclave. Face ID is optional, and Serroko never receives your biometric data: iOS only tells it
+    whether the check succeeded.</li>
+    <li><strong>"Access attempts" photos</strong> (optional, off by default): if you turn them on, after a
+    wrong PIN the front camera takes a photo that stays encrypted on the device only.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Photos:</strong> to import the photos you choose, remove the originals if you ask, and put
+    them back in your library when you export them.</li>
+    <li><strong>Camera and microphone:</strong> to take photos and videos directly in Serroko and, if you
+    enable it, for "Access attempts" photos.</li>
+    <li><strong>Local network:</strong> only for the optional sync between your own devices.</li>
+    <li><strong>Face ID:</strong> only if you turn on biometric unlock.</li>
+  </ul>
+  <p>You can deny or revoke any permission in iOS Settings; features that don't need it keep working.</p>
+
+  <h2>Sync between your devices</h2>
+  <p>If you link several devices, Serroko syncs them only over your local Wi-Fi network, directly from one
+  device to another, over an encrypted and authenticated connection. No data goes through our servers or
+  anyone else's. You can unlink at any time in Settings.</p>
+
+  <h2>Backups and exports</h2>
+  <p>Backups (<code>.serroko</code> files) are encrypted with a password you choose and saved wherever you
+  decide (for example in Files or iCloud Drive). Photos and files you export or share leave Serroko
+  unencrypted, to the destination you choose; from then on that service's rules apply.</p>
+
+  <h2>Purchases</h2>
+  <p>The free trial and the unlock are in-app purchases handled by Apple. Serroko only receives Apple's
+  confirmation of the purchase to enable features; it does not receive your name, email or payment
+  details. <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a> applies.</p>
+
+  <h2>Crash reports</h2>
+  <p>If you chose in iOS settings to share analytics with app developers, Apple may send us anonymous crash
+  reports for the app. They contain none of your content, and you can turn them off in Settings → Privacy
+  &amp; Security → Analytics &amp; Improvements.</p>
+
+  <h2>Children</h2>
+  <p>Serroko collects no one's data, including children's.</p>
+
+  <h2>Your rights</h2>
+  <p>Since we keep no personal data about you, there is nothing for us to access, correct or delete. To
+  remove everything Serroko has stored, delete the app from your device (and any backups you saved
+  elsewhere).</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be posted on this page with the new date.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy questions: <a href="mailto:lab.dev.support@gmail.com">lab.dev.support@gmail.com</a></p>
+</section>
+
+</main>
+</body>
+</html>
