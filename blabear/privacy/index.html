@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blabear — Privacy</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1f; --muted: #6e6e73; --line: #e5e5ea; --accent: #6b2d7b; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111113; --fg: #f2f2f7; --muted: #a1a1a6; --line: #2c2c2e; --accent: #c48ad6; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; margin: 0 0 4px; }
+  h2 { font-size: 21px; margin: 32px 0 8px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; }
+  .muted { color: var(--muted); font-size: 15px; }
+  a { color: var(--accent); }
+  nav { margin: 12px 0 0; font-size: 15px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+
+  .date { color: var(--muted); font-size: 15px; }
+  .lang { display:block; margin: 48px 0 0; padding-top: 32px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+  h3 { font-size: 18px; margin: 24px 0 6px; }
+  .back { font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+<p class="back"><a href="../../">Karuyaga</a></p>
+
+
+<h1>Informativa sulla privacy di Blabear</h1>
+<p class="date">Ultimo aggiornamento: Agosto 2026</p>
+
+<h2>1. Titolare del trattamento</h2>
+<p>Il titolare del trattamento dei dati raccolti tramite l'app blabear è Pasquale De Feo, contattabile all'indirizzo email <a href="mailto:psqdefeo@gmail.com">psqdefeo@gmail.com</a>.</p>
+
+<h2>2. Dati particolari e natura del servizio</h2>
+<p>blabear è un'app di incontri e social networking rivolta alla community gay/orso. L'iscrizione stessa e alcune informazioni del profilo (es. preferenze, ruolo) possono rivelare, direttamente o indirettamente, il tuo orientamento sessuale. Questa è una categoria particolare di dati personali (art. 9 GDPR) e per questo, oltre a leggere questa informativa, ti viene chiesto un consenso esplicito e separato in fase di registrazione — vedi il paragrafo 4.</p>
+
+<h2>3. Dati raccolti</h2>
+<h3>Dati forniti da te</h3>
+<ul>
+  <li>Email e password (gestite da Firebase Authentication)</li>
+  <li>Nickname</li>
+  <li>Età, altezza, peso, corporatura, ruolo/preferenze</li>
+  <li>Nazione e città di origine</li>
+  <li>Foto del profilo e foto/video caricati in galleria (pubblici e privati)</li>
+  <li>Messaggi scambiati in chat con altri utenti</li>
+  <li>Dichiarazione di maggiore età e consenso al trattamento di dati particolari, prestati in fase di registrazione (vedi par. 4)</li>
+</ul>
+<h3>Dati raccolti automaticamente</h3>
+<ul>
+  <li>Posizione geografica (GPS) — vedi il paragrafo dedicato 3.1</li>
+  <li>Stato online e data/ora dell'ultimo accesso</li>
+  <li>Token del dispositivo per l'invio di notifiche push (Firebase Cloud Messaging)</li>
+  <li>Dati di interazione con altri utenti: follower, following, amicizie, blocchi, visite al profilo, preferiti, "mi piace"/"non mi piace" sulle foto, richieste di sblocco foto private</li>
+  <li>Preferenze di notifica e di privacy impostate nell'app (es. modalità Incognito, conferme di lettura, blocco con impronta/Face ID)</li>
+</ul>
+<h3>Dati tecnici legati all'infrastruttura</h3>
+<p>L'app non integra strumenti di analisi comportamentale o di raccolta automatica di crash (nessun servizio di analytics o crash reporting attivo). L'infrastruttura Google Firebase su cui si appoggia il servizio (Authentication, Firestore, Storage, Cloud Messaging, Cloud Functions) elabora comunque, come qualunque servizio internet, dati tecnici di connessione (es. indirizzo IP, identificativi del dispositivo usati per autenticazione e invio notifiche) necessari al solo funzionamento tecnico.</p>
+
+<h3 id="geo">3.1 Posizione geografica</h3>
+<p>La posizione GPS viene salvata quando concedi il permesso al dispositivo (in fase di registrazione, al login e mentre usi le sezioni "vicino a te" e Mappa) e viene aggiornata mentre l'app è aperta. Le tue coordinate esatte non vengono mai condivise con altri utenti: sono conservate separatamente e accessibili solo a te. Agli altri utenti mostriamo esclusivamente una <strong>distanza approssimativa in chilometri</strong> (sotto i 500 metri viene indicato genericamente "&lt;500 mt", e solo se hai lasciato attiva l'impostazione "Mostra la distanza" in Privacy). Nella sezione Mappa, la tua posizione viene sottoposta a un <strong>processo di offuscamento geografico</strong>: le coordinate mostrate agli altri utenti non sono quelle reali ma il centro di un'area di circa 1 km di lato in cui ti trovi, ulteriormente spostato di un raggio compreso tra 80 e 300 metri generato in modo casuale e univoco per il tuo account. La posizione mostrata quindi non cambia finché ti muovi all'interno della stessa area, a garanzia dell'approssimazione del dato e della protezione della tua identità spaziale.</p>
+
+<h2>4. Consenso e basi giuridiche del trattamento</h2>
+<p>Le basi giuridiche non sono tutte uguali: l'art. 6 GDPR giustifica il trattamento "ordinario", mentre l'art. 9 GDPR entra in gioco in più, non al posto, ogni volta che il trattamento riguarda dati che possono rivelare l'orientamento sessuale.</p>
+<ul>
+  <li><strong>Erogazione del servizio</strong> (account, ricerca, chat, notifiche): esecuzione del contratto con te (art. 6.1.b GDPR).</li>
+  <li><strong>Dati che possono rivelare il tuo orientamento sessuale</strong> (impliciti nell'iscrizione e nel profilo): oltre alla base dell'art. 6, è necessaria una condizione specifica dell'art. 9 GDPR — in questo caso il tuo <strong>consenso esplicito</strong> (art. 9.2.a), raccolto in modo distinto e non preselezionato al momento della registrazione, separatamente dalla semplice presa visione di questa informativa.</li>
+  <li><strong>Posizione geografica</strong>: attiva solo se concedi il permesso dal dispositivo; base giuridica consenso (art. 6.1.a), rafforzata dall'art. 9.2.a quando la posizione, incrociata con altri dati del profilo, può contribuire a rivelare l'orientamento sessuale.</li>
+  <li><strong>Sicurezza e prevenzione abusi</strong> (blocco utenti): legittimo interesse (art. 6.1.f GDPR).</li>
+</ul>
+<p>In fase di registrazione ti vengono quindi proposte due scelte distinte, non una sola casella:</p>
+<ul>
+  <li>presa visione di questa informativa sulla privacy;</li>
+  <li>consenso esplicito al trattamento dei dati che, per la natura e le funzionalità di blabear, possono rivelare il tuo orientamento sessuale.</li>
+</ul>
+<p>Nessuna delle due caselle è preselezionata. Il sistema registra data, ora e versione dell'informativa a cui il consenso si riferisce, così da poterne dare conto in caso di verifica.</p>
+
+<h2>5. Messaggi in chat</h2>
+<p>Ogni conversazione è un unico documento condiviso tra i due partecipanti, non due copie separate. Questo significa che se tu cancelli il tuo account, l'intera conversazione — inclusi i messaggi ricevuti dall'altra persona — viene eliminata anche dal suo lato, non solo dal tuo. Allo stesso modo, se è l'altra persona a cancellare il proprio account, la vostra conversazione condivisa viene rimossa.</p>
+
+<h2>6. Foto e video privati</h2>
+<p>Le foto e i video contrassegnati come privati sono visibili solo a te e agli utenti a cui hai concesso esplicitamente l'accesso (funzione "richiesta di sblocco" in chat). Puoi revocare l'accesso in qualsiasi momento dalla sezione Unlocked; bloccare un utente revoca automaticamente e in entrambe le direzioni ogni accesso reciproco alle foto private.</p>
+<p>Una volta che una foto privata è stata sbloccata e visualizzata da un altro utente, non possiamo controllare né garantire che quella persona non ne abbia salvato una copia sul proprio dispositivo prima della revoca: la revoca dell'accesso impedisce nuove visualizzazioni tramite l'app, non recupera eventuali copie già fatte al di fuori di essa.</p>
+
+<h2>7. Segnalazioni e moderazione</h2>
+<p>Oggi blabear offre la funzione di <strong>blocco</strong> di un altro utente, che chiude reciprocamente anche l'accesso alle foto private e alle relazioni in corso. Non è ancora presente una funzione dedicata per segnalare profili, foto o messaggi al gestore del servizio, né un sistema di sospensione degli account.</p>
+
+<h2>8. Cancellazione dell'account</h2>
+<p>Dal Menu &gt; Dati di accesso puoi cancellare autonomamente il tuo account. Quando lo fai, vengono eliminati subito e in modo definitivo dal database in uso:</p>
+<ul>
+  <li>il tuo profilo;</li>
+  <li>tutte le tue foto e video, pubblici e privati;</li>
+  <li>la foto profilo;</li>
+  <li>tutte le relazioni che ti riguardano (follower, following, amicizie, blocchi, preferiti, visite), in entrambe le direzioni;</li>
+  <li>tutte le tue conversazioni e i relativi messaggi, incluso il lato dell'altro partecipante (vedi par. 5);</li>
+  <li>il tuo nickname, che torna disponibile per altri utenti;</li>
+  <li>l'account di autenticazione stesso.</li>
+</ul>
+<p>Non possiamo garantire in modo assoluto la cancellazione immediata da ogni copia tecnica del dato: i fornitori di infrastruttura possono mantenere per un periodo limitato copie di backup a fini di disaster recovery, indipendenti dalla nostra azione diretta.</p>
+
+<h2>9. Periodo di conservazione</h2>
+<p>In assenza di cancellazione volontaria, i dati restano nel database finché l'account risulta attivo.</p>
+<p>Fa eccezione anche l'account senza una foto profilo valida rimasto inattivo: se non accedi all'app per più di 3 settimane e il tuo profilo non ha una foto profilo valida, il profilo viene nascosto agli altri utenti e ricevi tre avvisi, nella chat dell'app e per email, a 10 giorni l'uno dall'altro. Se entro 30 giorni dal primo avviso non torni nell'app, l'account e tutti i dati collegati elencati al punto 8 vengono cancellati automaticamente. Se torni prima, la cancellazione si ferma.</p>
+<p>Fa eccezione la fase di registrazione: se l'indirizzo email non viene confermato tramite il link inviato entro 7 giorni dalla creazione dell'account, l'account e tutti i dati inseriti vengono cancellati automaticamente, e viene inviata un'email di comunicazione all'indirizzo indicato in fase di registrazione.</p>
+
+<h2>10. Con chi vengono condivisi i dati</h2>
+<p>I dati sono ospitati e trattati tramite i servizi Google Firebase (Authentication, Cloud Firestore, Cloud Storage, Cloud Messaging, Cloud Functions), che agiscono come responsabili del trattamento per conto del titolare. I dati non vengono venduti a terzi né usati per pubblicità di terze parti. Alcuni trattamenti possono comportare il trasferimento di dati verso paesi extra UE nell'ambito dei servizi Google Cloud/Firebase utilizzati; tali trasferimenti sono regolati dagli accordi sul trattamento dati sottoscritti con il fornitore.</p>
+<p>Alcuni dati sono visibili ad altri utenti per il funzionamento stesso del servizio: nickname, foto pubbliche, età/corporatura/preferenze dichiarate, distanza approssimativa (se non disattivata), stato online. Le foto private restano visibili solo previa autorizzazione esplicita, vedi par. 6.</p>
+
+<h2>11. Sicurezza dei dati</h2>
+<p>L'accesso ai dati è protetto da regole lato server basate sull'identità autenticata dell'utente. Subito dopo la creazione dell'account ti viene chiesto di confermare il tuo indirizzo email tramite un link inviato da Firebase Authentication: è una verifica che l'indirizzo sia reale e raggiungibile, utile anche per il recupero dell'accesso, non un dato aggiuntivo raccolto (l'email è già quella usata per registrarti). È inoltre disponibile un blocco dell'app con impronta digitale/Face ID come misura di sicurezza aggiuntiva sul dispositivo.</p>
+<p>Nessun sistema è sicuro al 100%. In caso di violazione dei dati che comporti un rischio per i tuoi diritti, il titolare si impegna a notificarla al Garante Privacy e, ove previsto, a te direttamente, nei termini di legge.</p>
+
+<h2>12. I tuoi diritti</h2>
+<p>Hai diritto di: accedere ai tuoi dati e ottenerne copia; chiedere la rettifica di dati inesatti; chiedere la cancellazione ("diritto all'oblio"); richiedere la portabilità dei dati; opporti al trattamento o chiederne la limitazione; revocare in qualsiasi momento il consenso prestato, senza pregiudicare la liceità di ciò che è stato trattato prima della revoca; proporre reclamo al Garante per la protezione dei dati personali.</p>
+<p>Puoi esercitare questi diritti scrivendo a <a href="mailto:psqdefeo@gmail.com">psqdefeo@gmail.com</a>, oppure direttamente dall'app tramite Menu &gt; Dati di accesso, dove è già disponibile l'eliminazione autonoma del profilo.</p>
+
+<h2>13. Minori</h2>
+<p>L'app è riservata a utenti maggiorenni (18+). La registrazione richiede una dichiarazione esplicita di età. Se venissimo a conoscenza dell'iscrizione di un minore, l'account verrà rimosso.</p>
+
+<h2>14. Modifiche a questa informativa</h2>
+<p>Questa informativa può essere aggiornata nel tempo, ad esempio in seguito a nuove funzionalità o a modifiche normative. La versione aggiornata sarà resa disponibile su questa stessa pagina, con indicazione della data di ultima revisione.</p>
+
+<h2>15. Contatti</h2>
+<p>Per qualsiasi domanda su questa informativa o sul trattamento dei tuoi dati: <a href="mailto:psqdefeo@gmail.com">psqdefeo@gmail.com</a>.</p>
+
+
+</main>
+</body>
+</html>
