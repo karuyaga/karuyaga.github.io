@@ -1,0 +1,30 @@
+#EXTM3U
+# KrokTV — playlist di prova per la review degli store.
+# Solo contenuti legali e liberamente distribuibili: stream di test ufficiali (Apple, Mux,
+# Unified Streaming) e film Blender Foundation (Creative Commons BY) / pubblico dominio (archive.org).
+# Verificati il 2026-10-31.
+
+#EXTINF:-1 tvg-id="apple.bipbop" tvg-chno="1" group-title="Test streams",Apple HLS test (bipbop)
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
+#EXTINF:-1 tvg-id="apple.bipbop169" tvg-chno="2" group-title="Test streams",Apple HLS test 16:9
+https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8
+#EXTINF:-1 tvg-id="mux.test" tvg-chno="3" group-title="Test streams",Mux HLS test stream
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 tvg-id="tos.hls" tvg-chno="4" group-title="Test streams",Tears of Steel (HLS)
+https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
+
+#EXTINF:-1 group-title="Movies",Big Buck Bunny (2008)
+https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4
+#EXTINF:-1 group-title="Movies",Elephants Dream (2006)
+https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4
+#EXTINF:-1 group-title="Movies",Sintel (2010)
+https://archive.org/download/Sintel/sintel-2048-stereo_512kb.mp4
+#EXTINF:-1 group-title="Movies",His Girl Friday (1940)
+https://archive.org/download/his_girl_friday/his_girl_friday_512kb.mp4
+
+#EXTINF:-1 group-title="Series",Blender Open Movies S01E01
+https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4
+#EXTINF:-1 group-title="Series",Blender Open Movies S01E02
+https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4
+#EXTINF:-1 group-title="Series",Blender Open Movies S01E03
+https://archive.org/download/Sintel/sintel-2048-stereo_512kb.mp4
